@@ -140,7 +140,6 @@ class ValidationForms extends React.Component {
                                 id="fullName"
                                 placeholder="Full Name"
                                 autoComplete="given-name"
-                                valid={!errors.fullName}
                                 invalid={touched.fullName && !!errors.fullName}
                                 autoFocus={true}
                                 required
@@ -156,7 +155,6 @@ class ValidationForms extends React.Component {
                                 id="email"
                                 placeholder="Email"
                                 autoComplete="email"
-                                valid={!errors.email}
                                 invalid={touched.email && !!errors.email}
                                 required
                                 onChange={handleChange}
@@ -171,7 +169,6 @@ class ValidationForms extends React.Component {
                                 id="phone"
                                 placeholder="Phone Number"
                                 autoComplete="phone"
-                                valid={!errors.phone}
                                 invalid={touched.phone && !!errors.phone}
                                 required
                                 onChange={handleChange}
@@ -184,9 +181,8 @@ class ValidationForms extends React.Component {
                             <Input type="password"
                                     name="password"
                                     id="password"
-                                    placeholder="Password"
+                                    placeholder=""
                                     autoComplete="new-password"
-                                    valid={!errors.password}
                                     invalid={touched.password && !!errors.password}
                                     required
                                     onChange={handleChange}
@@ -200,9 +196,8 @@ class ValidationForms extends React.Component {
                             <Input type="password"
                                     name="confirmPassword"
                                     id="confirmPassword"
-                                    placeholder="Confirm password"
+                                    placeholder=""
                                     autoComplete="new-password"
-                                    valid={!errors.confirmPassword}
                                     invalid={touched.confirmPassword && !!errors.confirmPassword}
                                     required
                                     onChange={handleChange}
