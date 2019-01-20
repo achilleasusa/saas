@@ -6,7 +6,7 @@ import { AppAsideToggler, AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler }
 
 import logo from '../../assets/img/brand/logo.svg'
 import sygnet from '../../assets/img/brand/sygnet.svg'
-import avatar from '../../assets/img/avatars/6.jpg'
+import avatar from '../../assets/img/avatars/1.jpg'
 import SearchBar from 'material-ui-search-bar'
 
 const propTypes = {
@@ -20,27 +20,25 @@ class DefaultHeader extends Component {
 
     // eslint-disable-next-line
     const { children, ...attributes } = this.props;
-
+    
     return (
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
-        {/* <AppNavbarBrand
-          full={{ src: logo, width: 89, height: 25, alt: 'CoreUI Logo' }}
-          minimized={{ src: sygnet, width: 30, height: 30, alt: 'CoreUI Logo' }}
-        /> */}
-        <div style = {{marginLeft: 60, margintRight: 150}}>Home</div>
-        <AppSidebarToggler  style = {{marginLeft: 60}}className="d-md-down-none" display="lg" />
-        <Nav className="d-md-down-none" navbar>
-        <SearchBar
-          onChange={() => console.log('onChange')}
-          onRequestSearch={() => console.log('onRequestSearch')}
-          style={{
-            margin: '0 auto',
-            maxWidth: 800,
-            height: 30
-          }}
+        <AppNavbarBrand
+          full={{ src: logo, width: 89, height: 45, alt: 'Saas 1000' }}
+          minimized={{ src: sygnet, width: 30, height: 50, alt: 'Saas 1000' }}
         />
-
+        <AppSidebarToggler  style = {{marginLeft: 0}}className="d-md-down-none" display="lg" />
+        <Nav className="d-md-down-none" navbar>
+          <SearchBar
+            onChange={() => console.log('onChange')}
+            onRequestSearch={() => console.log('onRequestSearch')}
+            style={{
+              margin: '0 auto',
+              maxWidth: 800,
+              height: 30
+            }}
+          />
         </Nav>
         <Nav className="ml-auto" navbar>
           <AppHeaderDropdown>

@@ -2,37 +2,33 @@ export default {
   items: [
     {
       name: 'Home',
-      url: '/dashboard',
-      icon: 'icon-speedometer',
-      // badge: {
-      //   variant: 'info',
-      //   text: 'NEW',
-      // },
+      url: '/home',
+      icon: 'icon-home',
     },
     {
       name: 'Export List',
       url: '/exportlist',
-      icon: 'icon-drop',
+      icon: 'icon-cloud-download',
     },
     {
       name: 'Get Updates',
-      url: '/theme/colors',
-      icon: 'icon-drop',
+      url: '/updates',
+      icon: 'icon-sync',
     },
     {
       name: 'News',
-      url: '/theme/colors',
-      icon: 'icon-drop',
+      url: '/news',
+      icon: 'icon-news',
     },
     {
       name: 'About Us',
-      url: '/theme/colors',
-      icon: 'icon-drop',
+      url: '/about',
+      icon: 'icon-about',
     },
     {
       name: 'Join',
-      url: '/theme/colors',
-      icon: 'icon-drop',
+      url: '/join',
+      icon: 'join',
     }
   ]
 };

@@ -39,7 +39,6 @@ class DefaultLayout extends Component {
             <AppSidebarMinimizer />
           </AppSidebar>
           <main className="main">
-            <AppBreadcrumb appRoutes={routes}/>
             <Container fluid>
               <Switch>
                 {routes.map((route, idx) => {
@@ -49,7 +48,7 @@ class DefaultLayout extends Component {
                       : (null);
                   },
                 )}
-                <Redirect from="/" to="/dashboard" />
+                <Redirect from="/" to="/home" />
               </Switch>
             </Container>
           </main>

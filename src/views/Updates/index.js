@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Dashboard extends Component {
+class Updates extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        Hello world!
+        Updates
       </div>
     );
   }
 }
 
-export default Dashboard;
+export default Updates;
